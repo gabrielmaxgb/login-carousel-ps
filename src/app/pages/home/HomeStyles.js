@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
 
-export const FullHeightGrid = styled(Grid)`
-  min-height: 100vh;
+export const StyledGrid = styled(Grid)`
+  margin-top: 2rem;
 `;
