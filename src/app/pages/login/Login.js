@@ -32,10 +32,11 @@ function Login() {
     // localStorage.setItem("token", HcData.token);
     if (user.loggedIn) return;
     setUserData({ loggedIn: true });
-    if (location.state?.from) {
-      console.log("navigating");
-      navigate(location.state.from);
-    }
+    navigate("/home");
+    // if (location.state?.from) {
+    //   console.log("navigating");
+    //   navigate(location.state.from);
+    // }
   }
 
   const handleClick = () => {
