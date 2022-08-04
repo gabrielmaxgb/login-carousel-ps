@@ -14,18 +14,6 @@ function Login() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  console.log(location.pathname);
-
-  // useEffect(() => {
-  //   navigate("/home");
-  // }, []);
-
-  // console.log("location")
-  // console.log(location)
-  // console.log("navigate")
-  // console.log(navigate)
-  // console.log(location.state?.from && location.state.from);
-
   const login = () => {
     console.log("login");
     setLoginError(false);
@@ -33,10 +21,6 @@ function Login() {
     if (user.loggedIn) return;
     setUserData({ loggedIn: true });
     navigate("/home");
-    // if (location.state?.from) {
-    //   console.log("navigating");
-    //   navigate(location.state.from);
-    // }
   }
 
   const handleClick = () => {

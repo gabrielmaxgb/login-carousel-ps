@@ -81,13 +81,9 @@ function Home() {
     )
   };
 
-  if (loading) {
-    return (
-      <div>loading</div>
-    );
-  }
-
-  return (
+  return loading ? (
+    <div>loading</div>
+  ) : (
     <>
       <Slider adaptiveHeight {...settings}>
         {carouselItems()}
